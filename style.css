@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Raleway', sans-serif;
+	/*background-image: url('images/bak.jpg');*/
+	background-color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6%;
+	width: 900px;
+	height: 500px;
+	background: #2E86C1;
+	box-shadow: 0 0 10px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+#sidebar_right {
+	float: right;
+	width: 180px;
+	height: 100%;
+	background-color: #548CFF;
+	border-left: 3px solid #0A6AFF;
+	box-shadow: -2px 0 20px;
+}
+
+#sidebar_right h2 {
+	margin-top: 10px;
+	color: #FFF;
+	text-align: center;
+}
+
+#main {
+	width: 600px;
+	height: 450px;
+	margin-left: 55px;
+	padding-top: 25px;
+	
+}
+
+#main img {
+	height: 250px;
+	width: auto;
+	transition: all .3s ease;
+	cursor: pointer;
+	box-shadow: 0 0 5px;
+}
+
+#main img:hover {
+	height: 260px;
+	width: auto;
+	filter: contrast(1.3)
+}
+
+#list {
+	width: 100%;
+	height: 100%;
+	margin-left: 30px;
+	padding-top: 25px;
+}
+
+#list ul li {
+	list-style: none;
+}
+
+#list ul li a {
+	text-decoration: none;
+	height: 25px;
+	color: #FFF;
+}
+
+#photo {
+	width: 600px;
+	height: auto;
+	margin-left: 50px;
+	padding-top: 100px;
+	color: #000;
+}
+
+#photo img {
+	color: #000;
+	height: 70px;
+	width: auto;
+	box-shadow: 0 0 7px 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: all .4s ease;
+}
+
+#photo img:hover {
+	height: 85px;
+	width: auto;
+}
+
+#photo table {
+	margin: auto;
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+#cssmenu {
+  margin-top: 20px;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#cssmenu a {
+  line-height: 1.3;
+}
+
+#cssmenu > ul > li {
+  background: #548CFF;
+  transition: all .3s ease;
+}
+
+#cssmenu > ul > li:hover {
+  background: #586BFD;
+}
+
+#cssmenu > ul > li > a {
+  font-size: 14px;
+  display: block;
+  background: url(images/pattern.png) top left repeat;
+  color: #ffffff;
+  border-top: none;
+}
+
+#cssmenu > ul > li > a > span {
+  display: block;
+  padding: 12px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+
+#cssmenu > ul > li.has-sub > a span {
+  background: url(images/icon_plus.png) 96% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+  background: url(images/icon_minus.png) 96% center no-repeat;
+}
+
+/* Sub menu */
+#cssmenu ul ul {
+  display: none;
+  background: #fff;
+  border-right: 1px solid #a2a194;
+  border-left: 1px solid #a2a194;
+}
+
+#cssmenu ul ul li {
+  padding: 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+#cssmenu ul ul li:last-child {
+  border-bottom: solid 2px #d4d4d4;
+}
+
+#cssmenu ul ul a {
+  padding: 10px 10px 10px 25px;
+  display: block;
+  color: #676767;
+  font-size: 12px;
+  font-weight: normal;
+	transition: all .3s ease;
+}
+
+#cssmenu ul ul a:before {
+  position: absolute;
+  left: 10px;
+  color: #e94f31;
+}
+
+#cssmenu ul ul a:hover {
+  color: #005CFF;
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 4px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #FFFFFF;
+  cursor: pointer;
+}
